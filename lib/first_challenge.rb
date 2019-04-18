@@ -19,8 +19,7 @@ def first_challenge
   contacts["Jon Snow"][:address] = "The Lord Commander's Rooms, The Wall, Westeros"
   
   contacts["Freddy Mercury"][:favorite_icecream_flavors].each do |name|
-    if name == "strawberry"
-      contacts["Freddy Mercury"][:favorite_icecream_flavors][name].delete
+    contacts["Freddy Mercury"][:favorite_icecream_flavors]
     puts name
   end
 
