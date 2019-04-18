@@ -18,10 +18,8 @@ def first_challenge
   
   contacts["Jon Snow"][:address] = "The Lord Commander's Rooms, The Wall, Westeros"
   
-  contacts["Freddy Mercury"][:favorite_icecream_flavors].each do |val|
-    i = 0
-    contacts["Freddy Mercury"][:favorite_icecream_flavors][i].delete_if("strawberry")
-    i += 1
+  contacts.each do |name , att|
+    
   end
 
   #remember to return your newly altered contacts hash!
