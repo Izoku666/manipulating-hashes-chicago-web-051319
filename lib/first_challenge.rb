@@ -18,15 +18,11 @@ def first_challenge
   
   contacts["Jon Snow"][:address] = "The Lord Commander's Rooms, The Wall, Westeros"
   
-  contacts.each do |person, data|
-    data.each do |att, val|
-      if att == :favorite_icecream_flavors
-        val.each do|flavor|
-        puts "#{flavor}"
-      end
-    end
+  contacts["Freddy Mercury"][:favorite_icecream_flavors].each do |val|
+    i = 0
+    contacts["Freddy Mercury"][:favorite_icecream_flavors][i].delete_if("strawberry")
+    i += 1
   end
-end
 
   #remember to return your newly altered contacts hash!
   contacts
