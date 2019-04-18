@@ -18,8 +18,8 @@ def first_challenge
   
   contacts["Jon Snow"][:address] = "The Lord Commander's Rooms, The Wall, Westeros"
   
-  contacts.each do |name , att|
-    
+  contacts["Freddy Mercury"][:favorite_icecream_flavors].each do |name|
+    puts name
   end
 
   #remember to return your newly altered contacts hash!
