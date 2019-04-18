@@ -14,5 +14,7 @@ def second_challenge
     end
   end
   
+  return a
+  
 
 end
